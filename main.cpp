@@ -1,10 +1,11 @@
-#include "main.h"
+#include "libmem/libmem.hpp"
 
-/*int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
     if (getuid() != 0) {
         system(("sudo -S "+std::string(argv[0])).c_str());
         exit(0);
-    }
+    } // Pozm has the best ideas :trole:
+  
     Process proc("linux_64_client");
 
     auto base = proc.GetModule("linux_64_client");
@@ -15,8 +16,9 @@
     proc.write(ammo, 500);
     std::cout << std::dec << proc.read<int>(ammo) << '\n';
     return 0;
-}*/
+}
 
+/*
 int main() {
     //Process proc("RobloxPlayerBeta.exe");
     Process proc("linux_64_client");
@@ -29,3 +31,4 @@ int main() {
 
     return 0;
 }
+}*/
